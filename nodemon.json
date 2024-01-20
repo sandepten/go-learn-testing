@@ -1,5 +1,5 @@
 {
   "watch": ["*.go"],
   "ext": "go",
-  "exec": "go test"
+  "exec": "richgo test -v ./..."
 }
