@@ -18,3 +18,12 @@ func ArraySum(numbers []int) int {
 	}
 	return sum
 }
+
+// ArraySumAll takes a varying number of slices, returning a new slice containing the totals for each slice passed in
+func ArraySumAll(numbersToSum ...[]int) []int {
+	var sums []int
+	for _, numbers := range numbersToSum {
+		sums = append(sums, ArraySum(numbers))
+	}
+	return sums
+}
